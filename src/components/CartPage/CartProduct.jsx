@@ -13,7 +13,7 @@ const CartProduct = ({ prod }) => {
   return (
     <section>
         <header>
-            <img src={prod.product.images} alt="" />
+            <img src={prod.product.images[0].url} alt="" />
         </header>
         <article>
             <h3>{prod.product.title}</h3>

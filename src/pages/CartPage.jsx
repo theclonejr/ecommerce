@@ -20,7 +20,7 @@ const CartPage = () => {
   }, 0)
 
   const handlePurchase = () => {
-    const url = 'http://localhost:8080/purchases'
+    const url = 'https://ecommerce-backend-c62e.onrender.com/purchases'
     axios.post(url, ' ', getConfigToken())
       .then(res => {
         console.log(res.data)

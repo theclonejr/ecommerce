@@ -16,7 +16,7 @@ export const { addToCart, removeFromCart, setCart } = cartSlice.actions
 
 export default cartSlice.reducer
 
-const baseUrl = 'http://localhost:8080/cart'
+const baseUrl = 'https://ecommerce-backend-c62e.onrender.com/cart'
 export const getCartThunk = () => (dispatch) => {
     const url = `${baseUrl}`
     axios.get(url, getConfigToken())
